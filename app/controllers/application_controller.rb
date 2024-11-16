@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
 
     def configure_permitted_parameters
       devise_parameter_sanitizer.permit(:sign_up, keys: [:first_name, :last_name])
-      devise_parameter_sanitizer.permit(:account_update, keys: [:first_name, :last_name])
+      devise_parameter_sanitizer.permit(:account_update, keys: [:first_name, :last_name, :notify_when_added_to_project, :notify_when_task_created, :notify_when_task_completed])
     end  
     private
 

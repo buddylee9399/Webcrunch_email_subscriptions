@@ -2,16 +2,20 @@
 #
 # Table name: users
 #
-#  id                     :integer          not null, primary key
-#  email                  :string           default(""), not null
-#  encrypted_password     :string           default(""), not null
-#  first_name             :string
-#  last_name              :string
-#  remember_created_at    :datetime
-#  reset_password_sent_at :datetime
-#  reset_password_token   :string
-#  created_at             :datetime         not null
-#  updated_at             :datetime         not null
+#  id                           :integer          not null, primary key
+#  email                        :string           default(""), not null
+#  encrypted_password           :string           default(""), not null
+#  first_name                   :string
+#  last_name                    :string
+#  notify_when_added_to_project :boolean          default(TRUE)
+#  notify_when_task_completed   :boolean          default(TRUE)
+#  notify_when_task_created     :boolean          default(TRUE)
+#  remember_created_at          :datetime
+#  reset_password_sent_at       :datetime
+#  reset_password_token         :string
+#  unsubscribe_hash             :string
+#  created_at                   :datetime         not null
+#  updated_at                   :datetime         not null
 #
 # Indexes
 #
